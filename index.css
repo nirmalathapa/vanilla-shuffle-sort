@@ -43,6 +43,7 @@ button {
 .content-wrapper {
   display: grid;
   background-color: #ffffff;
+  height: auto;
 }
 
 header {
@@ -67,7 +68,7 @@ main {
   gap: 5px;
   text-align: center;
   height: 70vmax;
-  padding: 0 0 20px;
+  padding: 0 20px 20px 20px ;
   font-size: 24px;
 }
 
