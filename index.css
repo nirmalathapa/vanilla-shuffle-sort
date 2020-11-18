@@ -1,0 +1,179 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+button {
+  background: #72C3DC;
+  padding: 20px;
+  color: #ffffff;
+  margin-right: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px solid black;
+  box-shadow: 0 5px 1px #6F98A8;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: #EFEFEF;
+  height: 100%;
+}
+
+.content-wrapper {
+  display: grid;
+  background: #ffffff;
+}
+
+header {
+  background: #333333;
+  color: #EFEFEF;
+  text-align: center;
+  padding: 10px 0;
+}
+
+aside {
+  order: 1;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+main {
+  order: 2;
+  display: grid;
+  grid-template-rows: auto;
+  gap: 5px;
+  text-align: center;
+  height: 70vh;
+  padding: 0 20px;
+  font-size: 24px;
+}
+
+#card_1,
+#card_8 {
+  border-left: 10px solid #6F98A8;
+  background-color: #EFEFEF;
+  display: grid;
+  align-content: center;
+}
+
+#card_2,
+#card_4 {
+  border-left: 10px solid #2B8EAD;
+  background-color: #EFEFEF;
+  display: grid;
+  align-content: center;
+}
+
+#card_3,
+#card_5,
+#card_9 {
+  border-left: 10px solid #2F454E;
+  background-color: #EFEFEF;
+  display: grid;
+  align-content: center;
+}
+
+#card_6,
+#card_7 {
+  border-left: 10px solid #BFBFBF;
+  background-color: #EFEFEF;
+  display: grid;
+  align-content: center;
+}
+
+footer {
+  order: 3;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vmin;
+  background-color: #ffffff;
+  font-style: italic;
+}
+
+/* Desktop */
+@media screen and (min-width: 960px) {
+  button {
+    width: 100%;
+    margin: 20px
+  }
+
+  header {
+    background: #ffffff;
+    color: #000000;
+  }
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  main {
+    order: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    color: #ffffff;
+    font-size: 72px;
+    height: 85vmin;
+  }
+
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: 73% 18%;
+    gap: 3rem;
+    background: #EFEFEF;
+  }
+
+  #card_1, #card_8 {
+    background: #6F98A8;
+  }
+
+  #card_2,
+  #card_4 {
+    background: #2B8EAD;
+  }
+
+  #card_3,
+  #card_5,
+  #card_9 {
+    background: #2F454E;
+  }
+
+  #card_6,
+  #card_7 {
+    background: #BFBFBF;
+  }
+
+  footer {
+    background: #EFEFEF;
+    margin-top: 15px;
+    font-style: italic;
+    align-items: flex-start;
+  }
+}
