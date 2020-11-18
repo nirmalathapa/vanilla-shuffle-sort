@@ -21,7 +21,7 @@ h1 {
 }
 
 button {
-  background: #72C3DC;
+  background-color: #72C3DC;
   padding: 20px;
   color: #ffffff;
   margin-right: 10px;
@@ -36,17 +36,17 @@ button {
 .container {
   display: flex;
   flex-direction: column;
-  background: #EFEFEF;
+  background-color: #ffffff;
   height: 100%;
 }
 
 .content-wrapper {
   display: grid;
-  background: #ffffff;
+  background-color: #ffffff;
 }
 
 header {
-  background: #333333;
+  background-color: #333333;
   color: #EFEFEF;
   text-align: center;
   padding: 10px 0;
@@ -67,7 +67,7 @@ main {
   gap: 5px;
   text-align: center;
   height: 70vmax;
-  padding: 0 20px;
+  padding: 0 0 20px;
   font-size: 24px;
 }
 
@@ -109,15 +109,16 @@ footer {
   text-align: center;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 20vmin;
+  align-items: center;  
   background-color: #ffffff;
-  font-style: italic;
-  padding-top: 10px;
+  font-style: italic;  
 }
 
 /* Desktop */
 @media screen and (min-width: 960px) {
+  .container{
+    background-color: #EFEFEF;
+  }
   button {
     width: 100%;
     margin: 20px
@@ -148,31 +149,31 @@ footer {
     display: grid;
     grid-template-columns: 73% 18%;
     gap: 3rem;
-    background: #EFEFEF;
+    background-color: #EFEFEF;
   }
 
   #card_1, #card_8 {
-    background: #6F98A8;
+    background-color: #6F98A8;
   }
 
   #card_2,
   #card_4 {
-    background: #2B8EAD;
+    background-color: #2B8EAD;
   }
 
   #card_3,
   #card_5,
   #card_9 {
-    background: #2F454E;
+    background-color: #2F454E;
   }
 
   #card_6,
   #card_7 {
-    background: #BFBFBF;
+    background-color: #BFBFBF;
   }
 
   footer {
-    background: #EFEFEF;
+    background-color: #EFEFEF;
     margin-top: 15px;
     font-style: italic;
     align-items: flex-start;
